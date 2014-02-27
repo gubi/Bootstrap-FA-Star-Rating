@@ -22,7 +22,7 @@ $(document).ready(function() {
 		readOnly: false,
 		// You can translate in your language
 		textVote: "rate",
-		textVotes: "rates"
+		textVotes: "rates",
 		readOnlyMessage: "If you want to rate please login",
 		readOnlyLink: "./Login"
 	}, function(selected) {
