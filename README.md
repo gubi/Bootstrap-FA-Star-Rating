@@ -19,9 +19,12 @@ $(document).ready(function() {
 		rate: 3.71, // Start to show this rates when page loads
 		total: 7, // Number of total votes
 		stars: 5, // Number of stars
+		readOnly: false,
 		// You can translate in your language
 		textVote: "rate",
 		textVotes: "rates"
+		readOnlyMessage: "If you want to rate please login",
+		readOnlyLink: "./Login"
 	}, function(selected) {
 		// Insert here an ajax call to save the user selection
 		alert("Your rate is " + selected + "!");
