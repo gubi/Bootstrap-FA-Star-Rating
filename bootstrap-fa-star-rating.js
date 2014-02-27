@@ -29,13 +29,15 @@ $.fn.rating = function(params, callback) {
 	$(this).append(total_rates);
 	
 	if(!settings.readOnly) {
+		var i = 0;
 		$(this).hover(function() {
 			$(".text-star").css({cursor: "default"});
 			
-			$(".text-star").hover(function() {
-				$(this).css({cursor: "default"});
-				
-				$(".text-star small").hover(function() {
+			$.each($(".text-star small"), function(item, value) {
+				$(this).hover(function() {
+					i = 0;
+					selected = item + 1;
+					
 					$(this).css({cursor: "pointer"}).removeClass("fa-star-o").removeClass("fa-star-half-o").addClass("fa-star").css("font-size", "1.3em");
 					$(this).prevAll().each(function() {
 						$(this).removeClass("fa-star-o").removeClass("fa-star-half-o").addClass("fa-star").css("font-size", "1em");
@@ -44,17 +46,18 @@ $.fn.rating = function(params, callback) {
 						$(this).removeClass("fa-star-half-o").removeClass("fa-star").addClass("fa-star-o").css("font-size", "1em");
 					});
 					$(this).click(function() {
+						i++;
 						var amount = $(this).index() + 1;
 						if (callback && typeof(callback) === "function") {
-							callback(amount);
+							if(i == 1) {
+								console.log(i, amount);
+							}
 						}
 					});
 				});
-			}, function() {
-				$(".text-star").html(current_poll);
 			});
 		}, function() {
-			$(this).find(".text-star").html(current_poll);
+			$(".text-star").html(current_poll);
 		});
 	} else {
 		box.tooltip();
