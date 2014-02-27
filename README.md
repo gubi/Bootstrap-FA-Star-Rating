@@ -9,7 +9,7 @@ So I've made this one :)
 # Usage
 Include the javascript file
 ```html
-<script src="bootstrap-fa-star-rating.js"></script>
+<script type="text/javascript" src="bootstrap-fa-star-rating.js"></script>
 ```
 
 Add this javascript:
