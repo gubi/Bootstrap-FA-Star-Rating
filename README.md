@@ -19,7 +19,7 @@ $(document).ready(function() {
 		rate: 2.18, // Start to show this rates when page loads
 		total: 7, // Number of total votes
 		stars: 5, // Number of stars
-		textVote: "rate", // You can 
+		textVote: "rate", // You can translate in your language 
 		textVotes: "rates"
 	}, function(selected) {
 		// You can insert an ajax call to save the user selection
