@@ -16,7 +16,7 @@ Add this javascript:
 ```javascript
 $(document).ready(function() {
 	$("#rating").rating({
-		rate: 2.18, // Start to show this rates when page loads
+		rate: 3.71, // Start to show this rates when page loads
 		total: 7, // Number of total votes
 		stars: 5, // Number of stars
 		// You can translate in your language
