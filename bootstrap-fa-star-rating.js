@@ -50,7 +50,7 @@ $.fn.rating = function(params, callback) {
 						var amount = $(this).index() + 1;
 						if (callback && typeof(callback) === "function") {
 							if(i == 1) {
-								console.log(i, amount);
+								callback(amount);
 							}
 						}
 					});
@@ -60,6 +60,6 @@ $.fn.rating = function(params, callback) {
 			$(".text-star").html(current_poll);
 		});
 	} else {
-		box.tooltip();
 	}
+en		box.tooltip();
 }
