@@ -1,7 +1,5 @@
-Bootstrap-FA-Star-Rating
-========================
-
 Bootstrap FontAwesome Star Rating
+========================
 
 ![example](https://raw.github.com/gubi/Bootstrap-FA-Star-Rating/master/star-rates.png)
 
