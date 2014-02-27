@@ -3,7 +3,7 @@ Bootstrap FontAwesome Star Rating
 
 ![example](https://raw.github.com/gubi/Bootstrap-FA-Star-Rating/master/star-rates.png)
 
-I was looking for a simple star rating system in jQuery for Bootstrap, that uses FontAwesome icons but seems there's no one.<br />
+I was looking for a simple star rating system in jQuery for Bootstrap and that uses FontAwesome icons, but seems there's no one.<br />
 So I've made this one :)
 
 # Usage
