@@ -22,7 +22,7 @@ $(document).ready(function() {
 		textVote: "rate", // You can translate in your language 
 		textVotes: "rates"
 	}, function(selected) {
-		// You can insert an ajax call to save the user selection
+		// Insert here an ajax call to save the user selection
 		alert("Your rate is " + selected + "!");
 	});
 });
